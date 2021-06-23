@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    background-color: rgb(68, 68, 177);
+    flex-direction: row;
+    
+    height: 50px;
+}
+
+.um ,.dois, .tres{
+    background: yellow;
+    width: auto;
+}
+.um{
+    margin-left: 15%;
+}
+.tres{
+   
+    margin-right: 85%;
+}
+
+.container{
+    background: violet;
+    margin-left: 15%;
+    margin-right: 15%;
+}
