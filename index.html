@@ -18,7 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">ACESSAR</a></li>
                 <li><a href="#contact">SOBRE</a></li>
-                <li style="float:right"><a class="logotipó" href="./index.html">LOGOTIPO</a></li>
+                <li style="float:right"><a class="logotipo" href="./index.html">LOGOTIPO</a></li>
             </ul>
         </header>
 
@@ -30,30 +30,29 @@
                     dolorem
                     sed beatae.</p>
             </section>
-            <form class="form-inicial">
+            <form class="form-inicial" method="POST">
                 <div>
                     <label>Serviço: </label>
-                    <select name="" id="">
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-                        <option value="">PROFISSÃO</option>
-
+                    <select name="Serviços" class="select-service">
+                        <option value="srv1" selected>Selecione o Serviço</option>
+                        <option value="srv2">PROFISSÃO</option>
+                        <option value="srv3">PROFISSÃO</option>
+                        <option value="srv4">PROFISSÃO</option>
+                        <option value="srv5">PROFISSÃO</option>
+                        <option value="srv6">PROFISSÃO</option>
+                        <option value="srv7">PROFISSÃO</option>
                     </select>
-                    <label>Cidade:</label>
-                    <input placeholder="Ex.: Crateus" />
+                    <label>Cidade/ESTADO:</label>
+                    <input placeholder="Ex.: Crateús/CE" class="cidadeEstado" pattern="[^0-9]+"/>
                 </div>
                 <div>
-                    <input type="submit" value="Pesquisar" class="button" />
+                    <input type="submit" value="Pesquisar" class="button-search"/>
                 </div>
             </form>
 
         </section>
     </main>
-
+    <script src="assets/scripts/search.js"></script>
 
 </body>
 

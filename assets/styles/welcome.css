@@ -1,7 +1,7 @@
 .container h1 {
     text-align: center;
     font-size: 4rem;  
-    color: #654CB3;  
+    color: var(--secondary-color);  
 }
 
 .form-inicial {
@@ -11,18 +11,22 @@
     align-items: center;
 }
 
-select, input {
-    width: 200px;
-    height: 25px;
-    border-radius: 4px;
-    border: 1px solid;
-    margin: 10px;
-}
+
 option{
     padding: 10px;
 }
-.button{
+.button-search{
     cursor: pointer;
     background: var(--primary-color);
-    border: 1px solid var(--primary-color-darker)
+    border: 0.1rem solid var(--primary-color-darker);
+    transition: 0.2;
+    font-weight: bold;
+    color: var(--color-light);
+    height: 2rem;
+    width: 9rem;
+    border-radius: 0.2rem;
+}
+
+.button-search:hover{
+    background: var(--primary-color-darker);
 }
