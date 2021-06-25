@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #845ec2;
+    --primary-color-darker: #663ea7;
+
+    --secondary-color: #00D2FC;
+    --secondary-color-darker: #009efa;
+
+    --expo: #4FFBDF;
+
+    --background-color: #dfeef6;
+
+    /*CORES PARA FONTES*/
+    --color-light: #f9f6fd; /*COR DA MAIN*/
+    --color-darker: #0c001f; 
+}
+body{
+    background: var(--background-color);
+}
+
+footer{
+   
+    bottom:0;
+    
+}
+
+.grid{
+    background: #ffd1c2;
+    border: 2px solid #f16234;
+    
+}
+
+.aqui{
+    background: var(--primary-color);
+}
+
+.aa{
+    margin-left: auto;
+}
+
+.areaInicial{
+    
+}
+

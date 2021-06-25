@@ -6,54 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="assets/styles/main.css" rel="stylesheet">
-    <link href="assets/styles/welcome.css" rel="stylesheet">
+
+    <!--Bootstrap-->
+
+    <link href="assets/css/welcome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <header>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">ACESSAR</a></li>
-                <li><a href="#contact">SOBRE</a></li>
-                <li style="float:right"><a class="logotipo" href="./index.html">LOGOTIPO</a></li>
-            </ul>
-        </header>
+    <!--Inicio do menu-->
+    <header>
 
-        <section class="container">
-            <h1>SATA</h1>
-            <section>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nulla deserunt nihil a labore
-                    molestiae, officia, sit odit natus voluptas eos quo repudiandae animi facere veniam obcaecati,
-                    dolorem
-                    sed beatae.</p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark aqui">
+            <div class="container-fluid">
+                <a class="navbar-brand  d-flex align-items-center" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-briefcase" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                    <strong class="ms-2">SATA</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Acessar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Sobre</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--fim do menu-->
+    <div class="areaInicial mt-5">
+
+        <div class="container shadow-sm p-3 mb-5 bg-body rounded">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="text-center">SATA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        suscipit nisi itaque natus voluptatem, voluptatum, velit nemo temporibus minus illum saepe
+                        dolore quod odit ad magni
+                        laudantium autem dolor fugiat.
+                    </p>
+                </div>
+                <div class="col-sm-6  d-flex justify-content-center">
+                    <img src="https://fakeimg.pl/400/" class="img-fluid">
+                </div>
+                <div class="col-sm-6 ">
+                    <h3 class="text-center">Pesquisar Serviço</h3>
+
+                    <form>
+                        <fieldset>
+
+                            <div class="mb-3 ">
+                                <label for="disabledTextInput" class="form-label">Infome sua Cidade</label>
+                                <input type="text" id="disabledTextInput" class="form-control"
+                                    placeholder="Ex.: Crateús/CE">
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="disabledSelect" class="form-label">Informe o Serviço</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Selecionar serviço</option>
+                                    <option>Selecionar serviço</option>
+                                    <option>Selecionar serviço</option>
+                                    <option>Selecionar serviço</option>
+                                    <option>Selecionar serviço</option>
+                                </select>
+                            </div>
+                            <div class="mb-3  d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary   ">
+                                    Pesquisar
+                                </button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- <footer class="container-fluid bg-dark text-white d-flex align-items-end">
+        <div class="row pt-5 pb-5 d-flex align-items-end">
+            <section class="col-md-5 mb-5">
+                <h5>Rodape</h5>
+                <ul>
+                    <li><a href="">sas</a></li>
+                    <li><a href="">sas</a></li>
+                </ul>
             </section>
-            <form class="form-inicial" method="POST">
-                <div>
-                    <label>Serviço: </label>
-                    <select name="Serviços" class="select-service">
-                        <option value="srv1" selected>Selecione o Serviço</option>
-                        <option value="srv2">PROFISSÃO</option>
-                        <option value="srv3">PROFISSÃO</option>
-                        <option value="srv4">PROFISSÃO</option>
-                        <option value="srv5">PROFISSÃO</option>
-                        <option value="srv6">PROFISSÃO</option>
-                        <option value="srv7">PROFISSÃO</option>
-                    </select>
-                    <label>Cidade/ESTADO:</label>
-                    <input placeholder="Ex.: Crateús/CE" class="cidadeEstado" pattern="[^0-9]+"/>
-                </div>
-                <div>
-                    <input type="submit" value="Pesquisar" class="button-search"/>
-                </div>
-            </form>
+            <section class="col-md-5 mb-5">
+                <h5>Rodape</h5>
+                <ul>
+                    <li><a href="">sas</a></li>
+                    <li><a href="">sas</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer> -->
+    
 
-        </section>
-    </main>
-    <script src="assets/scripts/search.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
+    <script src="./assets/js/search.js"></script>
 </body>
 
 </html>
