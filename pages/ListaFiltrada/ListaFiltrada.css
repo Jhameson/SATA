@@ -1,3 +1,16 @@
 /*
     Aqui seus styles da sua page que não serão utilizados em outros lugares
 */
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.imagemT {
+    width: 40%;
+    margin: auto;
+}
+
+.fontSize {
+    font-size: 20;
+}
