@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <!--Bootstrap-->
-
+    <link rel="stylesheet" href="ListaFiltrada.css">
     <link href="../../assets/css/welcome.css" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link href="../../assets/css/main.css" rel="stylesheet">
@@ -17,9 +17,9 @@
 <body>
     <!--Inicio do menu-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark aqui">
-            <div class="container-fluid">
-                <a class="navbar-brand  d-flex align-items-center" href="#">
+        <nav class="navbar navbar-expand-lg navbar-dark degrade-color sombra">
+            <div class="container p-0">
+                <a class="navbar-brand  d-flex align-items-center" href="../../index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-briefcase" viewBox="0 0 16 16">
                         <path
@@ -34,11 +34,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
+                       
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Acessar</a>
+                            <a class="nav-link active" href="../OpcoesdeAcesso/index.html">Acessar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Sobre</a>
@@ -50,14 +48,111 @@
         </nav>
     </header>
     <!--fim do menu-->
-    <div class="areaInicial mt-5">
 
-        <div class="container shadow-sm p-3 mb-5 bg-body rounded">
-            <div class="row">
-                
+
+    <div class="container sombra mt-5 p-3 mb-3 bg-body rounded ">
+        <div class="row">
+            <span class="col-md-8 fontSize">Resultados para: "Serviços Gerais" em Crateús/CE </span>
+
+            <a href="../../index.html" class="btn col-3  color-secondary efeitoBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+                    <path
+                        d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+                </svg>
+                Refazer pesquisa
+            </a>
+        </div>
+
+    </div>
+    <div class="container sombra p-3 mb-5 bg-body rounded">
+        <!-- MINHA ÁREA -->
+
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-3 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="imagemT img-fluid rounded-circle " src="img/homemBranco.jpg"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">João Lucas</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Seg a Seg- Tempo Integral</p>
+                        <p>R$ 25,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="imagemT img-fluid rounded-circle" src="img/mulherBranca.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Francisca Isolde</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Seg a Sex- 8:00hrs as 20:00hrs</p>
+                        <p>R$ 35,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="imagemT img-fluid rounded-circle" src="img/mulherBrancaCPreto.jpg"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Isabelle Fernandes</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Ter a Sab- 7:00hrs as 18:00hrs</p>
+                        <p>R$ 28,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="imagemT img-fluid rounded-circle " src="img/mulherPreta.jpg"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Marilia Carla</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Seg a Seg- 7:30hrs as 22:00hrs</p>
+                        <p>R$ 40,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 m-2">
+                <div class="card" style="width: 18rem;">
+                    <img class=" imagemT img-fluid rounded-circle" src="img/homemPreto.jpg"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Claudio Roberto</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Seg a Seg- 7:30hrs as 22:00hrs</p>
+                        <p>R$ 40,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2 ">
+                <div class="card" style="width: 18rem;">
+                    <img class="imagemT img-fluid rounded-circle" src="img/mulherRuiva.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Eduarda Rodrigues</h5>
+                        <h6 class="card-text">Horarios Disponiveis:</h6>
+                        <p>Seg a Seg- 7:00hrs as 22:00hrs</p>
+                        <p>R$ 35,00/hr</p>
+                        <a href="../Perfil/index.html" class="btn color-secondary efeitoBtn">Exibir Perfil</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
+
 
 
 
