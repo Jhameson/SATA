@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME</title>
 
     <!--Bootstrap-->
 
@@ -42,9 +42,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Acessar</a>
                         </li>
@@ -62,27 +60,32 @@
 
     <div class="container sombra p-3 mb-5 bg-body rounded mt-5">
         <div class="row ">
-            <div class="col-12 ">
+            <div class="col-12">
                 <h1 class="text-center">SATA</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                    suscipit nisi itaque natus voluptatem, voluptatum, velit nemo temporibus minus illum saepe
-                    dolore quod odit ad magni
-                    laudantium autem dolor fugiat.
+                <p>
+                    Olá! Bem vindo(a) ao Sistema de Apoio a Trabalhadores Autônomos - SATA!
+                </p>
+                
+                <p>
+                    Falta apenas um passo para você entrar no mundo SATA. Vamos lá! Digite a sua localização e o
+                    tipo de serviço que você está precisando e veja suas preocupações indo embora!
                 </p>
             </div>
             <div class="col-lg-6  d-flex justify-content-center mt-5">
-                <img src="assets/img/logotipo.jpeg" class="img-fluid logotipo  sombra">
+                <div class="col-8">
+                    <img src="assets/img/logotipo.jpeg" class="img-fluid logotipo  sombra">
+                </div>
             </div>
-            <div class="col-lg-5 mt-5">
-                <h3 class="text-center mb-5">Pesquisar Serviço</h3>
+            <div class="col-lg-6">
+                <h2 class="text-center mb-5 mt-5">Pesquisar Serviço</h2>
                 <form>
                     <fieldset>
-                        <div class="mb-3 ">
+                        <div class="mb-4">
                             <label for="disabledTextInput" class="form-label">Infome sua Cidade</label>
                             <input type="text" id="disabledTextInput" class="form-control"
                                 placeholder="Ex.: Crateús/CE">
                         </div>
-                        <div class="mb-3 ">
+                        <div class="mb-2">
                             <label for="disabledSelect" class="form-label">Informe o Serviço</label>
                             <select id="disabledSelect" class="form-select">
                                 <option selected>Selecionar serviço</option>
@@ -95,9 +98,11 @@
                                 <option>Babá</option>
                             </select>
                         </div>
+                        <div class="alerta mb-3">
+                        </div>
                         <div class="mb-3  d-flex justify-content-center">
-                            <button type="submit" class="btn  color-secondary efeitoBtn" onclick="pesquisar()">
-                                <a  href='pages/ListaFiltrada/index.html' class="color-light">Buscar</a>
+                            <button type="button" class="btn color-secondary efeitoBtn" onclick="pesquisar()">
+                                Buscar
                             </button>
                         </div>
                     </fieldset>

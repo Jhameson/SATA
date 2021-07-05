@@ -1,27 +1,13 @@
-
-
-
-// const formInicial = document.querySelector('.form-inicial');
-
-
-// formInicial.addEventListener('submit', function (event) {
-//     event.preventDefault();
-
-//     const selectService = formInicial.querySelector('.select-service');
-//     const servico = selectService.options[selectService.selectedIndex];
-
-//     const cidade = formInicial.querySelector('.cidadeEstado');
-
-//     // const ver = false;
-//     // (cidade.value.length < 3) ? ver = true : console.log();
-   
-//     // (ver === true) ? alertar() : '';
-
-//     // function alertar(){
-//     //     alert('')
-//     // }
-
-//     console.log(`serviço ${servico.text} e cidade ${cidade.value}`);
+function pesquisar(){
     
-// });
+    const selectService = document.querySelector('.form-select');
+    const servico = selectService.options[selectService.selectedIndex];
+    const cidade = document.querySelector('.form-control');
 
+    if (cidade === '' || servico.value === 'Selecionar serviço') {
+        const alerta = document.querySelector('.alerta');
+        alerta.innerHTML = "<p>Insira dados válidos</p>";
+        return;
+    }
+    window.location.assign("pages/ListaFiltrada/index.html");
+}

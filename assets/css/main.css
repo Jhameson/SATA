@@ -67,5 +67,8 @@ a:hover {
 
 .logotipo {
     border-radius: 20px;
-    width: 50%;
+}
+
+.alerta{
+    color: red;
 }
