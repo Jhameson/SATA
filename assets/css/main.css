@@ -3,8 +3,8 @@
     --primary-color-darker: #652ead;
     --secondary-color: #0b9ed8;
     --secondary-color-darker: #097ba8;
-    /* --background-color: #dfeef6; */
-    --background-color: #201f1e;
+    --background-color: #dfeef6;
+    /* --background-color: #201f1e; */
     /*CORES PARA FONTES*/
     --color-light: #f9f6fd;
     /*COR DA MAIN*/
@@ -43,7 +43,7 @@ a:hover {
 }
 
 .sombra {
-    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 2px 7px 0px rgba(63,63,63,0.51);
 }
 
 .degrade-color {
@@ -71,4 +71,12 @@ a:hover {
 
 .alerta{
     color: red;
+}
+
+/* pagina de acesso */
+.acesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }

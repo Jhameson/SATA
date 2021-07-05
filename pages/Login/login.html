@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,17 @@
 
     <!--Bootstrap-->
 
-    <link rel="stylesheet" href="assets/css/welcome.css" >
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css" >
-    
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
 </head>
 
 <body>
     <!--Inicio do menu-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark aqui">
-            <div class="container-fluid">
-                <a class="navbar-brand  d-flex align-items-center" href="#">
+        <nav class="navbar navbar-expand-lg navbar-dark degrade-color sombra">
+            <div class="container p-0">
+                <a class="navbar-brand  d-flex align-items-center" href="../../index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-briefcase" viewBox="0 0 16 16">
                         <path
@@ -34,9 +34,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" href="login.html">Acessar</a>
                         </li>
@@ -50,28 +48,33 @@
         </nav>
     </header>
     <!--fim do menu-->
-    <div class="container shadow-sm p-3 mb-5 bg-body rounded">
-        <div class=" container center mt6">
-            <h2>Utilize suas credenciais</h2>
+
+    <div class="col-4 m-auto sombra p-4  bg-body rounded mt-5">
+        <div class="row  flex-column">
+            <div class="col-12 text-center">
+                <h2>Utilize suas credenciais</h2>
+            </div>
             <form action="">
                 <div class="row mb-4">
                     <label for="user" class="form-label">Usuário:</label>
-                    <div class="col-sm-4">
+                    <div class="col-sm-12">
                         <input type="text" required id="userName" placeholder="Seu usuário" class="form-control">
                     </div>
-                    <label for="password" class="form-label">Senha:</label>
-                    <div class="col-sm-4">
+                    <label for="password" class="form-label mt-3">Senha:</label>
+                    <div class="col-sm-12">
                         <input type="password" required id="userPassword" placeholder="Sua senha" class="form-control">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" onClick="login(event)">ENTRAR</button>
+                <a type="submit" class="btn btn-primary" onClick="login(event)">ENTRAR</a>
             </form>
         </div>
+
     </div>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/search.js"></script>
-    <script src="./assets/js/validations.js"></script>
+    
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/validations.js"></script>
 </body>
+
 </html>
