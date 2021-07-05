@@ -10,13 +10,16 @@ function login(e){
     console.log(`gUser: ${getUser} gPasswrod: ${getPassword}`);
 
     if (getUser === mockedUser && getPassword === mockedPassword){
-        console.log("Login efetuado com sucesso!");
+        alert(`Bem vindo ${getUser}`);
+        window.location.href = '../../pages/ListaFiltrada/index.html'
     }else if(getUser === mockedUser && getPassword != mockedPassword){
-        console.log("Senha incorreta!");
+        alert(`Verifique a sua senha!`);
+        //console.log("Senha incorreta!");
     }else if(getUser != mockedUser && getPassword === mockedPassword){
-        console.log("Usuário incorreto ou inexistente");
+        alert(`Não encontramos o usuário ${getUser}`);
+        //console.log("Usuário incorreto ou inexistente");
     }else {
-        console.log("Não cadastrado no sistema!");
+        alert(`Informe credenciais válidas!`);
     }
 
 }
